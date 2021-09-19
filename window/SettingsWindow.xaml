@@ -1,0 +1,34 @@
+﻿<Window x:Class="WeatherApp.window.SettingsWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WeatherApp.window"
+        mc:Ignorable="d"
+        Title="Настройки" Height="230.409" Width="388.078" ResizeMode="NoResize" Icon="kisspng-computer-icons-icon-design-5afbbf9d28dae8.5403847915264480291674.png" WindowStartupLocation="CenterOwner">
+    <Grid>
+        <Label Content="ЕДИНИЦЫ ИЗМЕРЕНИЯ" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="168" FontSize="14" Foreground="#FF5D5B5B"/>
+        <Label Content="Температура" HorizontalAlignment="Left" Margin="0,44,0,0" VerticalAlignment="Top" Height="37" Width="130" Foreground="Black" FontSize="18"/>
+        <Label Content="Скорость ветра" HorizontalAlignment="Left" Margin="0,81,0,0" VerticalAlignment="Top" Height="37" Width="152" Foreground="Black" FontSize="18"/>
+        <Label Content="Единицы измерения&#xD;&#xA;атмосферного давл..." HorizontalAlignment="Left" Margin="0,118,0,0" VerticalAlignment="Top" Height="71" Width="178" Foreground="Black" FontSize="18"/>
+        <ComboBox HorizontalAlignment="Left" Height="26" Margin="151,50,0,0" VerticalAlignment="Top" Width="117">
+            <ComboBoxItem Content="Цельсий" FontSize="14"/>
+            <ComboBoxItem Content="Фаренгейт" FontSize="14"/>
+        </ComboBox>
+        <ComboBox HorizontalAlignment="Left" Height="26" Margin="151,87,0,0" VerticalAlignment="Top" Width="117" IsSynchronizedWithCurrentItem="False" IsReadOnly="True">
+            <ComboBoxItem Content="Шкала Бофорта" FontSize="14"/>
+            <ComboBoxItem Content="Километры в час" FontSize="14"/>
+            <ComboBoxItem Content="Метры в секунду" FontSize="14"/>
+            <ComboBoxItem Content="Мили в час" FontSize="14"/>
+            <ComboBoxItem Content="Узлы" FontSize="14"/>
+        </ComboBox>
+        <ComboBox HorizontalAlignment="Left" Height="26" Margin="178,136,0,0" VerticalAlignment="Top" Width="194">
+            <ComboBoxItem Content="Гектопаскаль" FontSize="14"/>
+            <ComboBoxItem Content="Миллибар" FontSize="14"/>
+            <ComboBoxItem Content="Миллиметр ртутного столба" FontSize="14"/>
+            <ComboBoxItem Content="Дюйм ртутного столба" FontSize="14"/>
+            <ComboBoxItem Content="Физическая атмосфера" FontSize="14"/>
+        </ComboBox>
+
+    </Grid>
+</Window>
