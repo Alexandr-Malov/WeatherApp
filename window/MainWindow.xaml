@@ -5,7 +5,7 @@
             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
             xmlns:local="clr-namespace:WeatherApp"
             mc:Ignorable="d"
-            Title="WeatherApp" Height="433.747" Width="284.283" Icon="/image/cloud_weather_22376.png" ResizeMode="CanMinimize" WindowStartupLocation="CenterOwner" Visibility="Visible">
+            Title="WeatherApp" Height="433.479" Width="352.353" Icon="/image/cloud_weather_22376.png" ResizeMode="CanMinimize" WindowStartupLocation="CenterOwner" Visibility="Visible">
 
 
 
@@ -25,23 +25,25 @@
         </Style>
     </Window.Resources>
     <Grid>
-        <Button Style="{DynamicResource ButtonStyle}" Margin="226,10,0,0" VerticalAlignment="Top" Height="42" Click="Button_Click" Focusable="False" Background="{x:Null}" BorderBrush="White" HorizontalAlignment="Left" Width="42">
-            <Image HorizontalAlignment="Left" Height="32" VerticalAlignment="Top" Width="36" Source="/image/kisspng-computer-icons-icon-design-5afbbf9d28dae8.5403847915264480291674.png" RenderTransformOrigin="0.203,0.601" IsEnabled="False"/>
-        </Button>
-        <TextBlock HorizontalAlignment="Left" Margin="23,32,0,254" TextWrapping="Wrap" Width="169" FontSize="100" TextAlignment ="Right" Text="20"/>
-        <TextBlock HorizontalAlignment="Left" Margin="185,64,0,0" TextWrapping="Wrap" Text=" °C" VerticalAlignment="Top" Height="29" Width="29" FontSize="20" FontWeight="Bold"/>
-        <TextBlock HorizontalAlignment="Left" Margin="34,155,0,0" TextWrapping="Wrap" Text="Облачно" VerticalAlignment="Top" Width="151" Height="32" FontSize="20" TextAlignment ="Right"/>
-        <TextBlock HorizontalAlignment="Left" Margin="23,211,0,0" TextWrapping="Wrap" Text="Восход" VerticalAlignment="Top" Height="21" Width="60" FontSize="16"/>
-        <TextBlock Margin="80,207,140.6,0" TextWrapping="Wrap" Text="05:22" VerticalAlignment="Top" Height="28" FontSize="20"/>
-        <TextBlock HorizontalAlignment="Left" Margin="23,240,0,0" TextWrapping="Wrap" Text="Закат" VerticalAlignment="Top" Height="23" Width="60" FontSize="16"/>
-        <TextBlock HorizontalAlignment="Left" Margin="66,236,0,0" TextWrapping="Wrap" Text="17:52" VerticalAlignment="Top" Height="28" Width="54" FontSize="20"/>
-        <TextBlock HorizontalAlignment="Left" Margin="23,268,0,0" TextWrapping="Wrap" Text="Влажность" VerticalAlignment="Top" Height="23" Width="90" FontSize="16"/>
-        <TextBlock HorizontalAlignment="Left" Margin="104,264,0,0" TextWrapping="Wrap" Text="100" VerticalAlignment="Top" Height="28" Width="33" FontSize="20"/>
-        <TextBlock HorizontalAlignment="Left" Margin="23,296,0,0" TextWrapping="Wrap" Text="Давление" VerticalAlignment="Top" Height="28" Width="76" FontSize="16"/>
-        <TextBlock HorizontalAlignment="Left" Margin="99,292,0,0" TextWrapping="Wrap" Text="1000" VerticalAlignment="Top" Height="28" Width="51" FontSize="20"/>
-        <TextBlock HorizontalAlignment="Left" Margin="23,323,0,0" TextWrapping="Wrap" Text="Скорость ветра" VerticalAlignment="Top" Height="28" Width="132" FontSize="16"/>
-        <TextBlock HorizontalAlignment="Left" Margin="150,319,0,0" TextWrapping="Wrap" Text="05:22" VerticalAlignment="Top" Height="28" Width="54" FontSize="20"/>
-        <TextBlock HorizontalAlignment="Left" Margin="137,264,0,0" TextWrapping="Wrap" Text="%" VerticalAlignment="Top" Height="27" Width="28" FontSize="20" TextDecorations="{x:Null}"/>
-
+        <TextBlock x:Name="temp" HorizontalAlignment="Left" Margin="10,45,0,0" TextWrapping="Wrap" Width="206" FontSize="100" Height="126" VerticalAlignment="Top" TextAlignment="Right"/>
+        <TextBlock HorizontalAlignment="Left" Margin="209,77,0,0" TextWrapping="Wrap" Text=" °C" VerticalAlignment="Top" Height="29" Width="29" FontSize="20" FontWeight="Bold"/>
+        <TextBlock x:Name="weather" HorizontalAlignment="Left" Margin="10,183,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="326" Height="41" FontSize="22" TextAlignment ="Center"/>
+        <TextBlock HorizontalAlignment="Left" Margin="12,243,0,0" TextWrapping="Wrap" Text="Восход" VerticalAlignment="Top" Height="21" Width="60" FontSize="16"/>
+        <TextBlock x:Name="sunrise" Margin="69,240,19.6,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="28" FontSize="20"/>
+        <TextBlock HorizontalAlignment="Left" Margin="12,272,0,0" TextWrapping="Wrap" Text="Закат" VerticalAlignment="Top" Height="23" Width="60" FontSize="16"/>
+        <TextBlock x:Name="sunset" HorizontalAlignment="Left" Margin="57,267,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="28" Width="269" FontSize="20"/>
+        <TextBlock HorizontalAlignment="Left" Margin="12,299,0,0" TextWrapping="Wrap" Text="Влажность" VerticalAlignment="Top" Height="23" Width="90" FontSize="16"/>
+        <TextBlock x:Name="humidity" HorizontalAlignment="Left" Margin="89,296,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="28" Width="33" FontSize="20" TextAlignment="Right"/>
+        <TextBlock HorizontalAlignment="Left" Margin="12,328,0,0" TextWrapping="Wrap" Text="Давление" VerticalAlignment="Top" Height="28" Width="76" FontSize="16"/>
+        <TextBlock x:Name="pressure" HorizontalAlignment="Left" Margin="87,323,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="28" Width="58" FontSize="20" TextAlignment="Right"/>
+        <TextBlock HorizontalAlignment="Left" Margin="12,355,0,0" TextWrapping="Wrap" Text="Скорость ветра" VerticalAlignment="Top" Height="28" Width="132" FontSize="16"/>
+        <TextBlock x:Name="windspeed" HorizontalAlignment="Left" Margin="113,352,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="28" Width="54" FontSize="20" TextAlignment="Right"/>
+        <TextBlock HorizontalAlignment="Left" Margin="121,296,0,0" TextWrapping="Wrap" Text="%" VerticalAlignment="Top" Height="27" Width="28" FontSize="20" TextDecorations="{x:Null}"/>
+        <Image x:Name="weatherimage" HorizontalAlignment="Left" Height="100" Margin="236,97,0,0" VerticalAlignment="Top" Width="100"/>
+        <Image HorizontalAlignment="Left" Height="26" Margin="10,15,0,0" VerticalAlignment="Top" Width="26" Source="png-clipart-black-and-white-location-logo-illustration-computer-icons-map-location-location-geolocation-arrow.png"/>
+        <TextBox x:Name="town" HorizontalAlignment="Left" Height="31" Margin="47,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="216" FontSize="22"/>
+        <Button Content="Поиск" HorizontalAlignment="Left" Margin="268,10,0,0" VerticalAlignment="Top" Width="68" Height="31" FontSize="18" Click="Button_Click"/>
+        <Label Content="м/с" HorizontalAlignment="Left" Margin="172,349,0,0" VerticalAlignment="Top" FontSize="18" Height="36" Width="37"/>
+        <Label Content="mmHg" HorizontalAlignment="Left" Margin="145,321,0,0" VerticalAlignment="Top" FontSize="18"/>
     </Grid>
 </Window>
