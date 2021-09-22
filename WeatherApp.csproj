@@ -60,9 +60,6 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Models\Weather.cs" />
-    <Compile Include="window\SettingsWindow.xaml.cs">
-      <DependentUpon>SettingsWindow.xaml</DependentUpon>
-    </Compile>
     <Page Include="window\MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -75,10 +72,6 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="window\SettingsWindow.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">
@@ -109,15 +102,6 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="image\cloud_weather_22376.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="image\png-clipart-computer-icons-installation-icon-setting-cdr-white.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="image\kisspng-computer-icons-icon-design-5afbbf9d28dae8.5403847915264480291674.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="window\kisspng-computer-icons-icon-design-5afbbf9d28dae8.5403847915264480291674.png" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="window\png-clipart-black-and-white-location-logo-illustration-computer-icons-map-location-location-geolocation-arrow.png" />
