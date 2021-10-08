@@ -106,5 +106,8 @@
   <ItemGroup>
     <Resource Include="window\png-clipart-black-and-white-location-logo-illustration-computer-icons-map-location-location-geolocation-arrow.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="window\kisspng-computer-icons-map-location-location-5ab9a0fbb3df37.6081492415221148117368.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
